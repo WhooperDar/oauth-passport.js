@@ -5,6 +5,7 @@ const app = express();
 
 // set up view engine 
 app.set('view engine', 'ejs');
+app.use(express.json());
 
 // set up routes 
 app.use('/auth', authRoutes); 
